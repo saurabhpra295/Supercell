@@ -8,72 +8,175 @@ html,body {
   height: 100%;
 }
 
+body {
+ background-color: #ffffff;
+}
 nav {
   width: 80%;
   margin: auto;
+  padding: 10px;
   background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav > img {
+.wrapper {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+.wrapper > img {
   height: 60px;
-  /* width: 70px; */
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.links > li {
+  color: grey;
+  transition: 0.25s;
+}
+
+.links > li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.wrapper1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.tabs > li {
+  background-color: grey;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  color: black;
+  transition: 0.25s;
+}
+
+.tabs > li:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.wrapper1 > i {
+  border-radius: 0;
+  background: none;
+  color: grey;
+  font-size: 20px;
+  padding: 20px;
+  border-left: 1px solid grey;
+}
+
+.menu {
+  display: none;
+  font-size: 24px;
+  color: white;
 }
 
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .wrapper > img {
+      height: 7vh;
+  }
+  .links {
+      display: none;
+  }
 
+  .tabs {
+      display: none;
+  }
 
+  .wrapper1 > i {
+      display: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
+  .menu {
+      display: initial;
+  }
 }
 
 
+@media (min-width: 320px) and (max-width: 600px) {
+  nav {
+      width: 100%;
+  }
+
+  .wrapper > img {
+      height: 7vh;
+  }
+  .links {
+      display: none;
+  }
+
+  .tabs {
+      display: none;
+  }
+
+  .wrapper1 > i {
+      display: none;
+  }
+
+  .menu {
+      display: initial;
+  }
+}
 
 
+.section {
+  width: 100%;
+  height: 540px;
+  background-image: url(https://supercell.com/_next/static/media/frontpage_hero.bca9ba5a.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
 
+.section > h1 {
+ position: absolute;
+ top: 33%;
+ /* font: 38px; */
+ font-size: 40px;
+ /* margin: 0 0 20px; */
+}
 
+.section > p {
+  /* margin: 0 0 30px; */
+  /* font: 22px; */
+  position: absolute;
+  top: 44%;
+  font-size: 18px;
+}
 
+.section > button {
+  background-color: #2D85f3;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  position: absolute;
+  top: 80%;
+  border: 1px solid white;
 
+}
 
 
 
