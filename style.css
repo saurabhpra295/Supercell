@@ -186,7 +186,7 @@ nav {
   /* display: inline; */
   display: flex;
   width: 80%;
-  height: 100%;
+  /* height: 100%; */
   /* object-fit: cover; */
   gap: 20px;
   margin: auto;
@@ -194,7 +194,7 @@ nav {
 }
 .container1 img {
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 
